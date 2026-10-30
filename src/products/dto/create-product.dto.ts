@@ -1,12 +1,10 @@
 import { ApiProperty } from '@nestjs/swagger';
 
 export class CreateProductDto {
-    @ApiProperty({ example: 'Laptop', description: 'The name of the product' })
+   @ApiProperty({ example: 'Clean Code', description: 'Le nom du produit' })
     name: string;
-    @ApiProperty({ example: 'Portable 15-inch laptop', description: 'The description of the product' })
+    @ApiProperty({ example: 'Guide pratique pour écrire du code lisible', description: 'La description du produit' })
     description: string;
-    @ApiProperty({ example: 1499.99, description: 'The price of the product' })
+    @ApiProperty({ example: 35.5, description: 'Le prix du produit' })
     price: number;
-    @ApiProperty({ example: 25, description: 'The quantity in stock' })
-    stock: number;
 }
